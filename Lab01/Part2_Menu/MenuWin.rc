@@ -1,0 +1,20 @@
+#pragma code_page(65001)
+
+#include <windows.h>
+#include "resource.h"
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "&Выход",                      ID_EXIT
+    END
+    POPUP "&Графика"
+    BEGIN
+        MENUITEM "&Сегмент эллипса",            ID_CHORD
+        MENUITEM SEPARATOR
+        MENUITEM "Шестиконечная &звезда",       ID_STAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Очистить",                   ID_CLEAN
+    END
+END
